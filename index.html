@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Live Agent Sample</title>
+</head>
+<body>
+
+    <!-- Live Agent Button -->
+    <a id="liveagent_button_online_5735j000000U1R0" href="javascript://Chat" style="display: none;" onclick="liveagent.startChat('5735j000000U1R0')">
+        Online Chat With Agent
+    </a>
+    <div id="liveagent_button_offline_5735j000000U1R0" style="display: none;">
+        Agent Offline
+    </div>
+
+    <!-- Live Agent Script -->
+    <script type="text/javascript">
+        if (!window._laq) { window._laq = []; }
+        window._laq.push(function(){
+            liveagent.showWhenOnline('5735j000000U1R0', document.getElementById('liveagent_button_online_5735j000000U1R0'));
+            liveagent.showWhenOffline('5735j000000U1R0', document.getElementById('liveagent_button_offline_5735j000000U1R0'));
+        });
+    </script>
+
+</body>
+</html>
